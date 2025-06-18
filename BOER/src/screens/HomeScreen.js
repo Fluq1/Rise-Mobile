@@ -14,6 +14,7 @@ import {
 import { Feather } from '@expo/vector-icons';
 import { COLORS, FONTS, SHADOWS, SPACING } from '../constants/theme';
 import { CustomButton } from '../components/CustomComponents';
+
 const { width } = Dimensions.get('window');
 
 const HomeScreen = ({ navigation }) => {
@@ -165,12 +166,6 @@ const HomeScreen = ({ navigation }) => {
           <CustomButton
             title="GERENCIAR CATEGORIAS"
             onPress={() => navigation.navigate('CategoryList')}
-            gradient
-            style={styles.crudButton}
-          />
-          <CustomButton
-            title="GERENCIAR FOTOS"
-            onPress={() => navigation.navigate('PhotoManagement')}
             gradient
             style={styles.crudButton}
           />

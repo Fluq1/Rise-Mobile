@@ -11,7 +11,6 @@ import ProductListScreen from './src/screens/ProductListScreen';
 import FormScreen from './src/screens/FormScreen';
 import CategoryListScreen from './src/screens/CategoryListScreen';
 import CategoryFormScreen from './src/screens/CategoryFormScreen';
-import PhotoManagement from './src/screens/PhotoManagement';
 
 // Initialize Firebase
 import { initializeApp } from 'firebase/app';
@@ -53,7 +52,6 @@ export default function App() {
         <Stack.Screen name="Form" component={FormScreen} />
         <Stack.Screen name="CategoryList" component={CategoryListScreen} />
         <Stack.Screen name="CategoryForm" component={CategoryFormScreen} />
-        <Stack.Screen name="PhotoManagement" component={PhotoManagement} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
